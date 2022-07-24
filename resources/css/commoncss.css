@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+   font-size:2em ; 
+   background-color: rgb(245, 240, 240);
+}
+label{
+    display: inline-block; 
+    width:10em;
+    margin: .20em;
+}
+header{
+    background-color:rgb(76, 76, 91); text-align-last: right; 
+    padding: 1em 1em 0 0;
+    
+}
+.navbar a{
+    color:whitesmoke;
+    margin:0 1em;
+}
+footer{
+     background-color:rgb(76, 76, 91);text-align:center;
+     color:whitesmoke;
+     padding: 1rem ;
+}
+main{
+    width:60vw;
+    
+    margin: 2rem auto;
+    border: 2px red solid;
+    padding:30px 20px;
+    border-radius: 1.5rem;
+    background-color:white;
+    min-height: calc(100vh - 23.9rem);
+}
+span{
+    color: brown;
+}

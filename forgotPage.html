@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>forget Password</title>
+    <link rel="stylesheet" href="/resources/css/commoncss.css">
+    <script>
+      var myStatus="out";
+ </script> 
+ <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    
+     <script type="text/javascript" src="resources/js/forgetPass.js"></script>  
+</head>
+<body >
+    <div class="navbar nav" style="background-color:rgb(76, 76, 91);  text-align-last: right;  padding: 1em 1em 1em 0; ">
+        
+            <a  href ="/loginPage.html">Login</a> &nbsp;&nbsp;
+            <a  href ="/registerPage.html">Register</a>
+    </div>
+  
+     <main class="container text-center ">
+        <h2>Forget Password </h2><br/>
+        <form class ="form">
+              <div>
+                  <label > Enter Email:</label>
+                  <input id="forgetemail" type="email" required>
+                  
+              </div>
+              <p style="color:brown; margin:.25rem 5rem 0 0; font-size:2.5rem;" id="wrongmail"> </p>
+              <br/>
+            <br/>
+              <div>
+                <button type="button" class="btn btn-primary" onclick="sendMail();">Send Email</button>
+              </div>
+              
+        </form>
+     </main>
+    
+</body>
+</html>

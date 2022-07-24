@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Change Password</title>
+    <link rel="stylesheet" href="/resources/css/commoncss.css">
+    
+</head>
+<body >
+    <header>
+      <div class="navbar" style="border:none; background-color:white; margin:1rem 2rem;">
+        <p style="color:brown; margin:.25rem 5rem 0 0; font-size:2.5rem;" id="myUser">  </p> 
+   </div> 
+         <div id="header"> </div>
+    </header>
+    <main class="container">
+        <div class=" text-center" >
+        <h2 class="heading" >Change Password</h2><br/><br/>
+        <p style="color:brown; margin:.25rem 5rem 0 0; font-size:2.5rem;" id ="changePassSuccess"> </p>
+          <div>
+            <label >Current Password</label>
+            <input type="password" id="currpass" required>
+            <span id="cuurpasserror"> </span>
+          </div>
+        <br/>
+          <div>
+            <label >New Password</label>
+            <input type="password" id="newpass" required>
+            <span id="newpasserror"> </span>
+          </div>
+        <br/>
+          <div>
+            <label >Confirm Password</label>
+            <input type="password" id="confirmnewpass" required>
+            <span id="cnfmnewpasserror"> </span>
+          </div><br/>
+          <div>
+            <button class="btn btn-primary" onclick="saveNewPass();">Save</button>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer"> </div>
+    </footer>
+      
+
+       <script >
+          $(function ()
+           { 
+              $('#header').load('/resources/header.html');
+              $('#footer').load('/resources/footer.html');
+            });
+       </script>
+       <script>
+           var myStatus="in";
+           var myName ="change";
+        </script> 
+         <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+       <script type="text/javascript" src="resources/js/commonjs.js"></script>
+       <script type="text/javascript" src="resources/js/changepass.js"></script>  
+       <script>checkSession();</script>
+       <script>loadHeader();</script>  
+</body>
+</html>

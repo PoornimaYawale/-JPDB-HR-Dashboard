@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Employee Form </title>
+    <link rel="stylesheet" href="/resources/css/commoncss.css">
+    
+</head>
+<body >
+    <header>
+        <div class="navbar" style="border:none; background-color:white; margin:1rem 2rem;">
+            <p style="color:brown; margin:.25rem 5rem 0 0; font-size: 2.5rem;" id="myUser">  </p> 
+       </div> 
+         <div id="header"> </div>
+    </header>
+    <main class="container text-center ">
+        <form  id="empform" method="post">
+                 <div >
+                      <label> Employee Id:</label>
+                      <input  style="width:50%;" type="text" id="empid"  onchange="getEmpFromEmpId()">
+                 </div> <br/>
+                  <div >
+                    <label > Employee Name:</label>
+                    <input style="width:50%;" type="text" id="empname" >
+                    
+                </div><br/>
+                  <div >
+                     <label> Basic Salary:</label>
+                     <input style="width:50%;" type="number"id="empsal" >
+                        
+                    </div><br/>
+                   <div >
+                       <label>HRA:</label>
+                       <input  style="width:50%;"type="number"id="hra" >
+                       
+                    </div><br/>
+                   <div>
+                       <label > DA:</label>
+                       <input  style="width:50%;"type="number" id="da" >
+                      
+                    </div><br/>
+                   <div >
+                     <label> Deduction:</label>
+                     <input style="width:50%;" type="number" id="deduct" >
+                    </div><br/>
+                   <div >
+                    <nav class="navbar navbar-default text-center"  style="border:none">
+                       <button type="button" class="btn  btn-primary" id="new" onclick="newForm()" >New</button> 
+                       <button type="button" class="btn  btn-primary" id="save" onclick="saveData()" disabled>Save</button>
+                       <button type="button" class="btn  btn-primary" id="edit" onclick="editData()" >Edit</button> 
+                       <button type="button" class="btn  btn-primary" id="change" onclick="changeData()" disabled>Change</button>
+                       <button type="button" class="btn  btn-primary" id="reset" onclick="resetForm()" disabled>Reset</button> 
+                    </nav>
+                   <nav class="navbar navbar-default text-center"  style="border:none">
+                    <button type="button" class="btn  btn-primary" id="first" onclick="firstData()" >First</button>
+                    <button type="button" class="btn  btn-primary" id="prev" onclick="prevData()" >Previous</button>
+                    <button type="button" class="btn  btn-primary" id="next" onclick="nextData()" disabled>Next</button> 
+                    <button type="button" class="btn  btn-primary" id="last" onclick="lastData()" >Last</button> 
+                   </nav>
+                   </div>
+            </form>
+    </main>
+
+    <footer>
+        <div id="footer"> </div>
+    </footer>
+    <script >
+      $(function ()
+        { 
+            $('#header').load('/resources/header.html');
+            $('#footer').load('/resources/footer.html');
+        });
+    </script>
+    <script>
+        var myStatus="in";
+        var myName ="empform";
+   </script> 
+       <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+       <script type="text/javascript" src="resources/js/commonjs.js"></script>
+       <script type="text/javascript" src="resources/js/addEmployee.js"></script>  
+       <script>checkSession();</script>
+       <script>loadHeader();</script>
+ 
+</body>
+</html>

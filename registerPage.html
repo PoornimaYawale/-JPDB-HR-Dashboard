@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>HRRegister</title>
+    <link rel="stylesheet" href="/resources/css/commoncss.css">
+    <script>
+      var myStatus="out";
+ </script> 
+
+    <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script type="text/javascript" src="resources/js/register.js"></script>
+</head>
+<body >
+    <div class="navbar nav" style="background-color:rgb(76, 76, 91); text-align-last: right;  padding: 1em 1em 1em 0; ">
+        
+            <a  href ="/loginPage.html">Login</a> 
+    </div>
+  
+     <main class="container text-center ">
+      <span id = "successregister" style="font-size:5rem;" > </span>
+        <h2>Register Yourself </h2><br/>
+        <form class ="form" method="post">
+            <div>
+                <label >Name:</label>
+                <input type="text" id="name" required>
+                <span id="nameerror"> </span>
+            </div>
+            <br/>
+              <div>
+                  <label >Email:</label>
+                  <input type="email" id="registeremail" required>
+                  <span id="emailerror"> </span>
+              </div>
+              <br/>
+              <div>
+                <label >Phone No:</label>
+                <input type="number" id="phoneno" required>
+                <span id="phoneerror"> </span>
+            </div>
+            <br/>
+              <div>
+                <label  >Password:</label>
+                <input type="password" id="registerpassword" required>
+                <span id="passerror"> </span>
+            </div>
+            <br/>
+            <div>
+                <label >Confirm Password:</label>
+                <input type="password" id="confirmpassword" required>
+                <span id="cnfrmpasserror"> </span>
+            </div>
+            <br/>
+              <div>
+                <button type="button" class="btn btn-primary" onclick="registerUser();">Register</button>
+              
+                <button type="button" class="btn btn-primary" onclick="resetForm();">Reset</button>
+              </div>
+        </form>
+     </main>
+    
+</body>
+</html>
