@@ -2,10 +2,10 @@
  
  ### Project provides, HR to login into the website from any device .Have proper session Management of HR. Provide HR to add new employees and edit the information of previously added one . HR can change their profile and logout from website after completing their work. 
 
-###### With the help of JsonPowerDB and its Serverless API , the work of controller (in MVC framework ) get reduced and the response from server to the webpages becomes faster.
-###### [Jpdb-commons.js](https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js) provide ready to use function which help to connect to the database easily and faster .
+#### With the help of JsonPowerDB and its Serverless API , the work of controller (in MVC framework ) get reduced and the response from server to the webpages becomes faster.
+#### [Jpdb-commons.js](https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js) provide ready to use function which help to connect to the database easily and faster .
 #### Screenshots:
-![Login Page](https://github.com/PoornimaYawale/JsonPowerDbProject/main/images/loginpage.png)
+![Login Page](https://github.com/PoornimaYawale/JPDB-HR-Dashboard/images/loginpage.png)
 ### About JsonPowerDB:
 
 - JsonPowerDB is a Real-time, High Performance, Lightweight and Simple to Use, Rest API based Multi-mode DBMS. JsonPowerDB has ready to use API for Json document DB, RDBMS, Key-value DB, GeoSpatial DB and Time Series DB functionality. JPDB supports and advocates for true serverless and pluggable API development.
